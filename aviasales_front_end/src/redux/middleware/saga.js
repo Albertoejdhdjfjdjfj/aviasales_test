@@ -4,7 +4,7 @@ import { getTickets } from '../../assets/functions/requestFunctions';
 import { requestTickets, requestTicketsSuccess, requestTicketsError } from '../actions/actions';
 
 export function* rootSaga() {
-  yield all([]);
+  yield all([watchGetTickets()]);
 }
 
 function* watchGetTickets() {

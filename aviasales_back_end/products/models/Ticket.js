@@ -9,11 +9,11 @@ const Ticket = new Schema({
     type: String,
     required: true
   },
-  segments: 
+  segment: 
     {
-      origin: String,
-      destination: String,
-      date: String,
+      from: String,
+      to: String,
+      date: Date,
       stops: [String],
       duration: Number
     }
